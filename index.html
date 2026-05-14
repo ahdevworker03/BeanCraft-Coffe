@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bean & Craft Coffee</title>
-
+    <title>Bean & Craft Coffee | Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,382 +12,115 @@
     />
 
     <link rel="stylesheet" href="Styles/tokens.css" />
-    <link rel="stylesheet" href="Styles/layout.css" />
-    <link rel="stylesheet" href="Styles/nav.css" />
-    <link rel="stylesheet" href="Styles/hero.css" />
-    <link rel="stylesheet" href="Styles/products.css" />
-    <link rel="stylesheet" href="Styles/explore.css" />
-    <link rel="stylesheet" href="Styles/bestseller.css" />
-    <link rel="stylesheet" href="Styles/testimonials.css" />
-    <link rel="stylesheet" href="Styles/subscribe.css" />
-    <link rel="stylesheet" href="Styles/trusted.css" />
-    <link rel="stylesheet" href="Styles/footer.css" />
-    <link rel="stylesheet" href="Styles/responsive.css" />
+    <link rel="stylesheet" href="Styles/login.css" />
   </head>
   <body>
-    <input type="checkbox" id="nav-toggle" class="navbar__checkbox" />
-    <header class="site-header">
-      <nav class="navbar">
-        <div class="navbar__container container">
-          <a class="navbar__logo" href="#">Bean & Craft Coffee</a>
-          <ul class="navbar__links">
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#discover">Discover</a></li>
-            <li><a href="#bestsellers">Bestsellers</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-          </ul>
-          <div class="navbar__cta">
-            <a
-              href="login.html"
-              class="navbar__link"
-              style="
-                margin-right: var(--spacing-lg);
-                font-size: var(--font-size-xs);
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.08em;
-                text-decoration: none;
-                color: var(--color-primary);
-              "
-              >Login</a
-            >
-            <button class="btn-primary" type="button">Shop Now</button>
+    <div class="login">
+      <div class="login__image"></div>
+
+      <div class="login__form-container">
+        <div class="login__form-wrapper">
+          <div class="login__signup-top">
+            Don't have an account? <a href="#">Sign up</a>
           </div>
 
-          <label
-            for="nav-toggle"
-            class="navbar__hamburger"
-            aria-label="Toggle menu"
-          >
-            <span class="hamburger-icon">☰</span>
-          </label>
-        </div>
-      </nav>
-    </header>
-
-    <div class="navbar__drawer">
-      <label
-        for="nav-toggle"
-        class="navbar__drawer-close"
-        aria-label="Close menu"
-        >✕</label
-      >
-      <a
-        href="#shop"
-        class="navbar__link"
-        onclick="document.getElementById('nav-toggle').checked = false"
-        >Shop</a
-      >
-      <a
-        href="#discover"
-        class="navbar__link"
-        onclick="document.getElementById('nav-toggle').checked = false"
-        >Discover</a
-      >
-      <a
-        href="#bestsellers"
-        class="navbar__link"
-        onclick="document.getElementById('nav-toggle').checked = false"
-        >Bestsellers</a
-      >
-      <a
-        href="#reviews"
-        class="navbar__link"
-        onclick="document.getElementById('nav-toggle').checked = false"
-        >Reviews</a
-      >
-      <a href="login.html" class="navbar__link">Login</a>
-      <a
-        href="#shop"
-        class="btn-primary"
-        onclick="document.getElementById('nav-toggle').checked = false"
-        >Shop Now</a
-      >
-    </div>
-
-    <main>
-      <section class="hero-section" id="home">
-        <div class="container">
-          <div class="hero__inner">
-            <div class="hero__content">
-              <h1 class="hero__headline">
-                Handcrafted Coffee, Brewed with Soul
-              </h1>
-              <p class="hero__subheadline">
-                Discover small-batch roasted coffee beans sourced ethically and
-                crafted for your perfect morning ritual.
-              </p>
-              <div class="hero__actions">
-                <button class="btn-primary" type="button">Shop Now</button>
-                <a class="btn-text" href="#discover">Explore Beans</a>
-              </div>
-            </div>
-            <div class="hero__visual">
-              <div class="hero__image-wrapper">
-                <img src="photos/hero.jpg" alt="Freshly roasted coffee beans" />
-              </div>
-            </div>
+          <div class="login__header">
+            <h1 class="login__title">Welcome back!</h1>
+            <p class="login__subtitle">Enter your email and password</p>
           </div>
-        </div>
-      </section>
-      <section class="products-section" id="shop">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-label">Our Collection</span>
-            <h2 class="section-title">Freshly Roasted, Ready to Brew</h2>
-          </div>
-          <div class="products-grid">
-            <div class="product-card">
-              <div class="product-card__image">
-                <img
-                  src="photos/ethiopian.jpg"
-                  alt="Ethiopian Light Roast coffee beans"
-                />
-              </div>
-              <span class="product-card__badge">Freshly Roasted</span>
-              <h3 class="product-card__name">Ethiopian Light Roast</h3>
-              <p class="product-card__description">
-                Bright and floral with citrus notes.
-              </p>
-              <div class="product-card__footer">
-                <span class="product-card__price">$18.00</span>
-                <button class="btn-outline" type="button">Add to Cart</button>
-              </div>
-            </div>
 
-            <div class="product-card">
-              <div class="product-card__image">
-                <img
-                  src="photos/colombian.jpg"
-                  alt="Colombian Medium Roast coffee beans"
-                />
-              </div>
-              <span class="product-card__badge">Bestseller</span>
-              <h3 class="product-card__name">Colombian Medium Roast</h3>
-              <p class="product-card__description">
-                Smooth, balanced, and chocolatey.
-              </p>
-              <div class="product-card__footer">
-                <span class="product-card__price">$16.00</span>
-                <button class="btn-outline" type="button">Add to Cart</button>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div class="product-card__image">
-                <img
-                  src="photos/brazil.jpg"
-                  alt="Brazil Dark Roast coffee beans"
-                />
-              </div>
-              <span class="product-card__badge">Limited Roast</span>
-              <h3 class="product-card__name">Brazil Dark Roast</h3>
-              <p class="product-card__description">
-                Bold, rich, and full-bodied.
-              </p>
-              <div class="product-card__footer">
-                <span class="product-card__price">$17.00</span>
-                <button class="btn-outline" type="button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="explore-section" id="discover">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-label">Discover</span>
-            <h2 class="section-title">
-              Explore Coffee Crafted for Everyday Moments
-            </h2>
-          </div>
-          <p class="explore__intro">
-            A warm and inviting selection of coffees made for people who value
-            taste, ritual, and quality.
-          </p>
-          <div class="explore-grid">
-            <div class="explore-card">
-              <div class="explore-card__icon"></div>
-              <h3 class="explore-card__title">Sourcing</h3>
-              <p class="explore-card__text">
-                Ethically sourced from trusted farms worldwide.
-              </p>
-            </div>
-
-            <div class="explore-card">
-              <div class="explore-card__icon"></div>
-              <h3 class="explore-card__title">Roasting</h3>
-              <p class="explore-card__text">
-                Small-batch roasting to preserve peak flavor.
-              </p>
-            </div>
-
-            <div class="explore-card">
-              <div class="explore-card__icon"></div>
-              <h3 class="explore-card__title">Brewing</h3>
-              <p class="explore-card__text">
-                Inspiration and guides for your perfect cup.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="bestseller-section" id="bestsellers">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-label">Most Loved</span>
-            <h2 class="section-title">Our Bestsellers</h2>
-          </div>
-          <div class="bestseller-grid">
-            <div class="bestseller-card">
-              <div class="bestseller-card__image">
-                <img
-                  src="photos/colombian.jpg"
-                  alt="Colombian Medium Roast coffee beans"
-                />
-              </div>
-              <span class="bestseller-card__badge">#1 Bestseller</span>
-              <div class="bestseller-card__content">
-                <h3 class="bestseller-card__name">Colombian Medium Roast</h3>
-                <p class="bestseller-card__description">
-                  Our most popular blend — smooth, balanced, and endlessly
-                  satisfying.
-                </p>
-                <div class="bestseller-card__footer">
-                  <span class="bestseller-card__price">$16.00</span>
-                  <button class="btn-primary" type="button">Shop Now</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="bestseller-card">
-              <div class="bestseller-card__image">
-                <img
-                  src="photos/ethiopian.jpg"
-                  alt="Ethiopian Light Roast coffee beans"
-                />
-              </div>
-              <span class="bestseller-card__badge">Staff Pick</span>
-              <div class="bestseller-card__content">
-                <h3 class="bestseller-card__name">Ethiopian Light Roast</h3>
-                <p class="bestseller-card__description">
-                  A bright and delicate roast with floral, citrus complexity.
-                </p>
-                <div class="bestseller-card__footer">
-                  <span class="bestseller-card__price">$18.00</span>
-                  <button class="btn-primary" type="button">Shop Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="testimonials-section" id="reviews">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-label">What Customers Say</span>
-            <h2 class="section-title">Loved by Coffee Drinkers</h2>
-          </div>
-          <div class="testimonials-grid">
-            <div class="testimonial-card">
-              <div class="testimonial-card__stars">★★★★★</div>
-              <blockquote class="testimonial-card__quote">
-                "The smoothest coffee I've ever had. It feels like a café
-                experience at home."
-              </blockquote>
-              <p class="testimonial-card__author">Sarah K.</p>
-            </div>
-
-            <div class="testimonial-card">
-              <div class="testimonial-card__stars">★★★★★</div>
-              <blockquote class="testimonial-card__quote">
-                "Every roast feels thoughtful and rich in flavor."
-              </blockquote>
-              <p class="testimonial-card__author">Mark T.</p>
-            </div>
-
-            <div class="testimonial-card">
-              <div class="testimonial-card__stars">★★★★★</div>
-              <blockquote class="testimonial-card__quote">
-                "I've tried many brands and Bean & Craft is now my daily
-                ritual."
-              </blockquote>
-              <p class="testimonial-card__author">James L.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="subscribe-section">
-        <div class="container">
-          <div class="subscribe__inner">
-            <h2 class="subscribe__headline">Join Our Coffee Circle</h2>
-            <p class="subscribe__text">
-              Get brewing tips, new blends, and exclusive offers.
-            </p>
-            <div class="subscribe__form">
+          <form action="home.html" method="get">
+            <div class="login__input-group">
+              <span class="login__input-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+              </span>
               <input
                 type="email"
-                class="subscribe__input"
-                placeholder="Enter your email"
+                name="email"
+                class="login__input"
+                placeholder="Email address"
               />
-              <button type="button" class="subscribe__btn">Subscribe</button>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="trusted-section">
-        <div class="container">
-          <p class="trusted__label">Trusted by coffee lovers and local cafés</p>
-          <div class="trusted__logos">
-            <span class="trusted__logo-item">Roast & Co.</span>
-            <span class="trusted__logo-item">Morning Brew Co.</span>
-            <span class="trusted__logo-item">The Daily Grind</span>
-            <span class="trusted__logo-item">Artisan Café</span>
-            <span class="trusted__logo-item">Grounds & Grace</span>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer__grid">
-          <div class="footer__col footer__col--brand">
-            <span class="footer__logo">Bean & Craft Coffee</span>
-            <p class="footer__tagline">
-              Freshly roasted, always crafted with care.
-            </p>
-          </div>
-          <div class="footer__col">
-            <h4 class="footer__col-title">Shop</h4>
-            <ul class="footer__links">
-              <li><a href="#">Ethiopian Light Roast</a></li>
-              <li><a href="#">Colombian Medium Roast</a></li>
-              <li><a href="#">Brazil Dark Roast</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h4 class="footer__col-title">Company</h4>
-            <ul class="footer__links">
-              <li><a href="#shop">Shop</a></li>
-              <li><a href="#discover">Discover</a></li>
-              <li><a href="#bestsellers">Bestsellers</a></li>
-              <li><a href="#reviews">Reviews</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h4 class="footer__col-title">Support</h4>
-            <ul class="footer__links">
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <p>© 2026 Bean & Craft Coffee. All rights reserved.</p>
+
+            <div class="login__input-group">
+              <span class="login__input-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                  />
+                </svg>
+              </span>
+              <input
+                type="password"
+                name="password"
+                class="login__input"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="login__options">
+              <label class="login__remember">
+                <input type="checkbox" name="remember" />
+                Remember me
+              </label>
+              <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__btn">Login</button>
+
+            <div class="login__divider">
+              <span>or login with</span>
+            </div>
+
+            <div class="login__social">
+              <button
+                type="button"
+                class="login__social-btn"
+                aria-label="Login with Google"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                    fill="#34A853"
+                  />
+                  <path
+                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                    fill="#FBBC05"
+                  />
+                  <path
+                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                    fill="#EA4335"
+                  />
+                  <path d="M1 1h22v22H1z" fill="none" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="login__social-btn"
+                aria-label="Login with Facebook"
+              >
+                <svg viewBox="0 0 24 24" fill="#1877F2">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854V15.468H7.078V12.073H10.125V9.476c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.395h-2.796v8.459C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="login__footer">
+              No account? <a href="#">Create an account</a>
+            </div>
+          </form>
         </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

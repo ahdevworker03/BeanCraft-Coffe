@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean & Craft Coffee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Styles/tokens.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/nav.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/products.css" />
+    <link rel="stylesheet" href="Styles/explore.css" />
+    <link rel="stylesheet" href="Styles/bestseller.css" />
+    <link rel="stylesheet" href="Styles/testimonials.css" />
+    <link rel="stylesheet" href="Styles/subscribe.css" />
+    <link rel="stylesheet" href="Styles/trusted.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/responsive.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" class="navbar__checkbox" />
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="navbar__container container">
+          <a class="navbar__logo" href="#">Bean & Craft Coffee</a>
+          <ul class="navbar__links">
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#discover">Discover</a></li>
+            <li><a href="#bestsellers">Bestsellers</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+          <div class="navbar__cta">
+            <a
+              href="login.html"
+              class="navbar__link"
+              style="
+                margin-right: var(--spacing-lg);
+                font-size: var(--font-size-xs);
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                text-decoration: none;
+                color: var(--color-primary);
+              "
+              >Login</a
+            >
+            <button class="btn-primary" type="button">Shop Now</button>
+          </div>
+
+          <label
+            for="nav-toggle"
+            class="navbar__hamburger"
+            aria-label="Toggle menu"
+          >
+            <span class="hamburger-icon">☰</span>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <div class="navbar__drawer">
+      <label
+        for="nav-toggle"
+        class="navbar__drawer-close"
+        aria-label="Close menu"
+        >✕</label
+      >
+      <a
+        href="#shop"
+        class="navbar__link"
+        onclick="document.getElementById('nav-toggle').checked = false"
+        >Shop</a
+      >
+      <a
+        href="#discover"
+        class="navbar__link"
+        onclick="document.getElementById('nav-toggle').checked = false"
+        >Discover</a
+      >
+      <a
+        href="#bestsellers"
+        class="navbar__link"
+        onclick="document.getElementById('nav-toggle').checked = false"
+        >Bestsellers</a
+      >
+      <a
+        href="#reviews"
+        class="navbar__link"
+        onclick="document.getElementById('nav-toggle').checked = false"
+        >Reviews</a
+      >
+      <a href="login.html" class="navbar__link">Login</a>
+      <a
+        href="#shop"
+        class="btn-primary"
+        onclick="document.getElementById('nav-toggle').checked = false"
+        >Shop Now</a
+      >
+    </div>
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__headline">
+                Handcrafted Coffee, Brewed with Soul
+              </h1>
+              <p class="hero__subheadline">
+                Discover small-batch roasted coffee beans sourced ethically and
+                crafted for your perfect morning ritual.
+              </p>
+              <div class="hero__actions">
+                <button class="btn-primary" type="button">Shop Now</button>
+                <a class="btn-text" href="#discover">Explore Beans</a>
+              </div>
+            </div>
+            <div class="hero__visual">
+              <div class="hero__image-wrapper">
+                <img src="photos/hero.jpg" alt="Freshly roasted coffee beans" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products-section" id="shop">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Our Collection</span>
+            <h2 class="section-title">Freshly Roasted, Ready to Brew</h2>
+          </div>
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-card__image">
+                <img
+                  src="photos/ethiopian.jpg"
+                  alt="Ethiopian Light Roast coffee beans"
+                />
+              </div>
+              <span class="product-card__badge">Freshly Roasted</span>
+              <h3 class="product-card__name">Ethiopian Light Roast</h3>
+              <p class="product-card__description">
+                Bright and floral with citrus notes.
+              </p>
+              <div class="product-card__footer">
+                <span class="product-card__price">$18.00</span>
+                <button class="btn-outline" type="button">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img
+                  src="photos/colombian.jpg"
+                  alt="Colombian Medium Roast coffee beans"
+                />
+              </div>
+              <span class="product-card__badge">Bestseller</span>
+              <h3 class="product-card__name">Colombian Medium Roast</h3>
+              <p class="product-card__description">
+                Smooth, balanced, and chocolatey.
+              </p>
+              <div class="product-card__footer">
+                <span class="product-card__price">$16.00</span>
+                <button class="btn-outline" type="button">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img
+                  src="photos/brazil.jpg"
+                  alt="Brazil Dark Roast coffee beans"
+                />
+              </div>
+              <span class="product-card__badge">Limited Roast</span>
+              <h3 class="product-card__name">Brazil Dark Roast</h3>
+              <p class="product-card__description">
+                Bold, rich, and full-bodied.
+              </p>
+              <div class="product-card__footer">
+                <span class="product-card__price">$17.00</span>
+                <button class="btn-outline" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="explore-section" id="discover">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Discover</span>
+            <h2 class="section-title">
+              Explore Coffee Crafted for Everyday Moments
+            </h2>
+          </div>
+          <p class="explore__intro">
+            A warm and inviting selection of coffees made for people who value
+            taste, ritual, and quality.
+          </p>
+          <div class="explore-grid">
+            <div class="explore-card">
+              <div class="explore-card__icon"></div>
+              <h3 class="explore-card__title">Sourcing</h3>
+              <p class="explore-card__text">
+                Ethically sourced from trusted farms worldwide.
+              </p>
+            </div>
+
+            <div class="explore-card">
+              <div class="explore-card__icon"></div>
+              <h3 class="explore-card__title">Roasting</h3>
+              <p class="explore-card__text">
+                Small-batch roasting to preserve peak flavor.
+              </p>
+            </div>
+
+            <div class="explore-card">
+              <div class="explore-card__icon"></div>
+              <h3 class="explore-card__title">Brewing</h3>
+              <p class="explore-card__text">
+                Inspiration and guides for your perfect cup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bestseller-section" id="bestsellers">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Most Loved</span>
+            <h2 class="section-title">Our Bestsellers</h2>
+          </div>
+          <div class="bestseller-grid">
+            <div class="bestseller-card">
+              <div class="bestseller-card__image">
+                <img
+                  src="photos/colombian.jpg"
+                  alt="Colombian Medium Roast coffee beans"
+                />
+              </div>
+              <span class="bestseller-card__badge">#1 Bestseller</span>
+              <div class="bestseller-card__content">
+                <h3 class="bestseller-card__name">Colombian Medium Roast</h3>
+                <p class="bestseller-card__description">
+                  Our most popular blend — smooth, balanced, and endlessly
+                  satisfying.
+                </p>
+                <div class="bestseller-card__footer">
+                  <span class="bestseller-card__price">$16.00</span>
+                  <button class="btn-primary" type="button">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bestseller-card">
+              <div class="bestseller-card__image">
+                <img
+                  src="photos/ethiopian.jpg"
+                  alt="Ethiopian Light Roast coffee beans"
+                />
+              </div>
+              <span class="bestseller-card__badge">Staff Pick</span>
+              <div class="bestseller-card__content">
+                <h3 class="bestseller-card__name">Ethiopian Light Roast</h3>
+                <p class="bestseller-card__description">
+                  A bright and delicate roast with floral, citrus complexity.
+                </p>
+                <div class="bestseller-card__footer">
+                  <span class="bestseller-card__price">$18.00</span>
+                  <button class="btn-primary" type="button">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section" id="reviews">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">What Customers Say</span>
+            <h2 class="section-title">Loved by Coffee Drinkers</h2>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "The smoothest coffee I've ever had. It feels like a café
+                experience at home."
+              </blockquote>
+              <p class="testimonial-card__author">Sarah K.</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "Every roast feels thoughtful and rich in flavor."
+              </blockquote>
+              <p class="testimonial-card__author">Mark T.</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "I've tried many brands and Bean & Craft is now my daily
+                ritual."
+              </blockquote>
+              <p class="testimonial-card__author">James L.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe-section">
+        <div class="container">
+          <div class="subscribe__inner">
+            <h2 class="subscribe__headline">Join Our Coffee Circle</h2>
+            <p class="subscribe__text">
+              Get brewing tips, new blends, and exclusive offers.
+            </p>
+            <div class="subscribe__form">
+              <input
+                type="email"
+                class="subscribe__input"
+                placeholder="Enter your email"
+              />
+              <button type="button" class="subscribe__btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trusted-section">
+        <div class="container">
+          <p class="trusted__label">Trusted by coffee lovers and local cafés</p>
+          <div class="trusted__logos">
+            <span class="trusted__logo-item">Roast & Co.</span>
+            <span class="trusted__logo-item">Morning Brew Co.</span>
+            <span class="trusted__logo-item">The Daily Grind</span>
+            <span class="trusted__logo-item">Artisan Café</span>
+            <span class="trusted__logo-item">Grounds & Grace</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col footer__col--brand">
+            <span class="footer__logo">Bean & Craft Coffee</span>
+            <p class="footer__tagline">
+              Freshly roasted, always crafted with care.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Shop</h4>
+            <ul class="footer__links">
+              <li><a href="#">Ethiopian Light Roast</a></li>
+              <li><a href="#">Colombian Medium Roast</a></li>
+              <li><a href="#">Brazil Dark Roast</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Company</h4>
+            <ul class="footer__links">
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#discover">Discover</a></li>
+              <li><a href="#bestsellers">Bestsellers</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Support</h4>
+            <ul class="footer__links">
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 Bean & Craft Coffee. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
