@@ -1,14 +1,14 @@
 :root {
   /* Colors */
-  --color-bg: #dee2d6;
+  --color-bg: #d9c5b2;
   --color-primary: #4a2c2a;
-  --color-secondary: #d4a96a;
-  --color-accent: #6b7f5e;
-  --color-text-dark: #1e1e1e;
-  --color-text-muted: #7a6a5a;
+  --color-secondary: #c68e5a;
+  --color-accent: #8b4513;
+  --color-text-dark: #2c1e1a;
+  --color-text-muted: #6b5a50;
   --color-white: #ffffff;
   --color-card-bg: #f5efe6;
-  --color-border: #e8ddd0;
+  --color-border: #cbb6a3;
 
   /* Typography */
   --font-heading: "Playfair Display", serif;
