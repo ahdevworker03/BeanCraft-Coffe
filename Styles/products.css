@@ -95,7 +95,6 @@
   color: var(--color-primary);
 }
 
-/* .btn-outline — SHARED COMPONENT */
 .btn-outline {
   background: transparent;
   border: 1.5px solid var(--color-primary);

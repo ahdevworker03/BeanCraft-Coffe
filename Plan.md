@@ -8,6 +8,7 @@ _Status: Completed | Aesthetic: Nescafe-Inspired Premium | Architecture: Modular
 
 ```css
 /* Established in Styles/tokens.css */
+
 --color-bg: #d9c5b2;          /* Creamy Latte */
 --color-primary: #4a2c2a;     /* Deep Coffee Brown */
 --color-secondary: #c68e5a;   /* Golden Tan */
