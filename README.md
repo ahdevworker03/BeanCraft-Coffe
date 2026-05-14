@@ -51,4 +51,4 @@ A premium, handcrafted coffee brand website featuring a warm, "Nescafe-inspired"
 Simply open `index.html` in any modern web browser to view the site.
 
 ---
-© 2024 Bean & Craft Coffee. All rights reserved.
+© 2026 Bean & Craft Coffee. All rights reserved.
