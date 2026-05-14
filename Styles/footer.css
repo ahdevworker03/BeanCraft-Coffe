@@ -1,7 +1,8 @@
 .site-footer {
   background: var(--color-primary);
   color: var(--color-white);
-  padding-block: var(--spacing-3xl);
+  padding-top: var(--spacing-3xl);
+  padding-bottom: var(--spacing-xl);
 }
 
 .footer__grid {
