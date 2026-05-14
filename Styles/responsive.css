@@ -1,22 +1,10 @@
 @media (max-width: 1024px) {
-  .navbar__links {
-    gap: var(--spacing-lg);
-  }
-
-  .navbar__links a {
-    font-size: var(--font-size-xs);
-  }
-
   .hero__inner {
     grid-template-columns: 1fr;
   }
 
   .hero-section {
     text-align: center;
-  }
-
-  .hero__subheadline {
-    max-width: 100%;
   }
 
   .hero__actions {
@@ -36,23 +24,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .bestseller-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .subscribe__form {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .subscribe__input {
-    max-width: 100%;
-  }
-
   .footer__grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
@@ -60,21 +31,16 @@
 }
 
 @media (max-width: 768px) {
-  .navbar__links {
-    display: none;
-  }
-
-  .navbar__logo {
-    font-size: var(--font-size-md);
+  .navbar__container {
+    height: 64px;
   }
 
   .hero__headline {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
   }
 
   .hero-section {
-    min-height: auto;
-    padding-block: var(--spacing-2xl);
+    padding-block: var(--spacing-xl);
   }
 
   .products-grid {
@@ -89,14 +55,6 @@
     grid-template-columns: 1fr;
   }
 
-  .subscribe__headline {
-    font-size: var(--font-size-xl);
-  }
-
-  .trusted__logos {
-    gap: var(--spacing-xl);
-  }
-
   .footer__grid {
     grid-template-columns: 1fr;
   }
@@ -105,18 +63,19 @@
     text-align: center;
   }
 
-  .footer__tagline {
-    max-width: 100%;
+  .bestseller-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
   }
 }
 
 @media (max-width: 480px) {
   .hero__headline {
-    font-size: var(--font-size-xl);
+    font-size: 1.75rem;
   }
 
   .section-title {
-    font-size: var(--font-size-xl);
+    font-size: 1.5rem;
   }
 
   .hero__actions {
@@ -124,18 +83,9 @@
     width: 100%;
   }
 
-  .btn-primary {
+  .btn-primary, .btn-text {
     width: 100%;
     text-align: center;
-  }
-
-  .btn-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .subscribe__btn {
-    width: 100%;
   }
 
   .container {
