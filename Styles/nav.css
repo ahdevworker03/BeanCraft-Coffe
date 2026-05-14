@@ -75,6 +75,10 @@
   flex-shrink: 0;
 }
 
+.navbar__checkbox {
+  display: none;
+}
+
 .navbar__hamburger {
   display: none;
   background: none;
@@ -84,7 +88,6 @@
   color: var(--color-primary);
   padding: var(--spacing-xs);
 }
-
 
 .navbar__drawer {
   position: fixed;
@@ -100,8 +103,12 @@
   transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.navbar__drawer--active {
+.navbar__checkbox:checked ~ .navbar__drawer {
   right: 0;
+}
+
+.navbar__checkbox:checked ~ body {
+  overflow: hidden;
 }
 
 .navbar__drawer-close {
@@ -113,6 +120,7 @@
   color: var(--color-primary);
   margin-bottom: var(--spacing-2xl);
 }
+
 
 .navbar__drawer .navbar__link {
   font-size: var(--font-size-lg);

@@ -74,6 +74,13 @@
   padding-top: var(--spacing-md);
 }
 
+.bestseller-card__footer .btn-primary {
+  padding: 6px 12px;
+  font-size: var(--font-size-xs);
+  width: auto;
+  white-space: nowrap;
+}
+
 .bestseller-card__price {
   font-size: var(--font-size-lg);
   font-weight: 700;
