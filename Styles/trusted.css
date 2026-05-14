@@ -1,5 +1,5 @@
 .trusted-section {
-  background: var(--color-bg);
+  background: #eaddcf;
   padding-block: var(--spacing-3xl);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
@@ -7,12 +7,12 @@
 
 .trusted__label {
   text-align: center;
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  color: var(--color-primary);
   margin-bottom: var(--spacing-2xl);
+  font-style: italic;
 }
 
 .trusted__logos {
