@@ -13,6 +13,7 @@ _Status: Completed | Aesthetic: Nescafe-Inspired Premium | Architecture: Modular
 --color-primary: #4a2c2a;     /* Deep Coffee Brown */
 --color-secondary: #c68e5a;   /* Golden Tan */
 --color-accent: #8b4513;      /* Warm Cinnamon */
+--color-white: #eaddcf;       /* Surface Color */
 --color-card-bg: #f5efe6;     /* Off-White Cream */
 --color-border: #cbb6a3;      /* Soft Mocha */
 ```
@@ -23,7 +24,8 @@ _Status: Completed | Aesthetic: Nescafe-Inspired Premium | Architecture: Modular
 
 ```text
 /
-├── index.html
+├── login.html          # Main entry point (redirects from index.html)
+├── index.html          # Redirects to login.html
 ├── photos/
 │   ├── hero.jpg
 │   ├── ethiopian.jpg
@@ -57,7 +59,7 @@ _Status: Completed | Aesthetic: Nescafe-Inspired Premium | Architecture: Modular
 - [x] Built professional glassmorphism header.
 - [x] Implemented animated underline hover effects.
 - [x] Mapped navigation links to page sections (#shop, #discover, etc.).
-- [x] Set header positioning to static top.
+- [x] Set header positioning to sticky top.
 
 ### Phase 3 — Hero & Product Showcase
 - [x] Populated Hero with HD imagery and refined typography.
@@ -74,9 +76,9 @@ _Status: Completed | Aesthetic: Nescafe-Inspired Premium | Architecture: Modular
 - [x] Built "Subscribe" section with coffee-circle branding.
 
 ### Phase 6 — Layout & Polish
-- [x] Fixed footer bottom gap issues.
-- [x] Synchronized all section mapping for seamless UX.
-- [x] Verified mobile and tablet responsiveness across all breakpoints.
+- [x] Refactored login page and social login buttons.
+- [x] Improved mobile responsiveness.
+- [x] Configured automatic redirect from index to login.
 
 ---
 

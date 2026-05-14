@@ -11,6 +11,7 @@ Read it fully at the start of every session.
 
 You execute what is specified. Maintain the "Nescafe-inspired" premium aesthetic at all times.
 Consistency with existing design tokens and modular CSS structure is paramount.
+Note: `login.html` is the primary entry point for the project.
 
 ---
 
@@ -21,6 +22,7 @@ Always use the established design tokens in `Styles/tokens.css`:
 - **Background (`--color-bg`):** #d9c5b2 (Creamy Latte)
 - **Primary (`--color-primary`):** #4a2c2a (Coffee Brown)
 - **Accent (`--color-accent`):** #8b4513 (Warm Cinnamon)
+- **White/Surface (`--color-white`):** #eaddcf
 - **Card Background (`--color-card-bg`):** #f5efe6
 
 ### 2. Typography
@@ -30,7 +32,7 @@ Always use the established design tokens in `Styles/tokens.css`:
 
 ### 3. Header & Navigation
 - **Header:** Glassmorphism style with blur (12px) and semi-transparent latte background.
-- **Positioning:** Static at the top of the page (not sticky).
+- **Positioning:** Sticky at the top of the page.
 - **Smooth Scrolling:** Always maintain `scroll-behavior: smooth` for anchor navigation.
 
 ---

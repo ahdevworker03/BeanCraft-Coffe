@@ -6,7 +6,7 @@ A premium, handcrafted coffee brand website featuring a warm, "Nescafe-inspired"
 
 ## 🎨 Visual Identity
 
-- **Nescafe Palette:** A warm and inviting color scheme featuring creamy latte backgrounds, deep coffee browns, and earthy cinnamon accents.
+- **Nescafe Palette:** A warm and inviting color scheme featuring creamy latte backgrounds, deep coffee browns, earthy cinnamon accents, and a custom surface color (#eaddcf).
 - **Glassmorphism Header:** A sophisticated, semi-transparent navigation bar with professional typography and animated interactions.
 - **HD Imagery:** High-quality visuals showcasing the roasting process and our signature coffee collections.
 
@@ -21,7 +21,8 @@ A premium, handcrafted coffee brand website featuring a warm, "Nescafe-inspired"
 
 ```text
 /
-├── index.html          # Main entry point
+├── login.html          # Main entry point (redirects from index.html)
+├── index.html          # Redirects to login.html
 ├── photos/             # HD coffee assets
 ├── Styles/             # Modular CSS architecture
 │   ├── tokens.css      # Design system & color palette
@@ -48,7 +49,7 @@ A premium, handcrafted coffee brand website featuring a warm, "Nescafe-inspired"
 
 ## 📖 How to Run
 
-Simply open `index.html` in any modern web browser to view the site.
+Simply open `login.html` in any modern web browser to view the site (or open `index.html` to be redirected automatically).
 
 ---
 © 2026 Bean & Craft Coffee. All rights reserved.
