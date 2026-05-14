@@ -21,7 +21,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); /* Slanted split style */
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); 
 }
 
 .login__image::after {
@@ -42,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem; /* Reduced from 4rem */
+  padding: 2rem; 
   background-color: var(--color-bg);
   min-width: 400px;
 }
@@ -57,7 +57,7 @@ body {
 
 .login__signup-top {
   align-self: flex-end;
-  margin-bottom: clamp(1rem, 4vh, 2.5rem); /* Reduced significantly */
+  margin-bottom: clamp(1rem, 4vh, 2.5rem); 
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
 }
@@ -72,12 +72,12 @@ body {
 }
 
 .login__header {
-  margin-bottom: 1.5rem; /* Reduced from 2.5rem */
+  margin-bottom: 1.5rem; 
 }
 
 .login__title {
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 4vw, 2.5rem); /* Slightly smaller */
+  font-size: clamp(1.75rem, 4vw, 2.5rem); 
   color: var(--color-primary);
   margin-bottom: 0.5rem;
   font-weight: 700;
@@ -91,12 +91,12 @@ body {
 
 .login__input-group {
   position: relative;
-  margin-bottom: 1rem; /* Reduced from 1.25rem */
+  margin-bottom: 1rem; 
 }
 
 .login__input {
   width: 100%;
-  padding: 1rem 1rem 1rem 3.5rem; /* Reduced padding */
+  padding: 1rem 1rem 1rem 3.5rem; 
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-lg);
   font-size: var(--font-size-base);
@@ -134,7 +134,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem; /* Reduced from 2.5rem */
+  margin-bottom: 1.5rem; 
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -171,7 +171,7 @@ body {
   font-size: var(--font-size-base);
   font-weight: 700;
   cursor: pointer;
-  margin-bottom: 1.5rem; /* Reduced from 2rem */
+  margin-bottom: 1.5rem; 
   transition: all 0.3s ease;
   font-family: var(--font-body);
   text-transform: uppercase;
@@ -187,7 +187,7 @@ body {
 .login__divider {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem; /* Reduced from 2rem */
+  margin-bottom: 1.5rem; 
   color: var(--color-text-muted);
   font-size: 0.8rem;
   font-weight: 600;
@@ -251,7 +251,7 @@ body {
   font-weight: 700;
 }
 
-/* Responsive Adjustments */
+
 
 @media (max-width: 1200px) {
   .login__form-container {
@@ -310,3 +310,4 @@ body {
     font-size: 1.6rem;
   }
 }
+
